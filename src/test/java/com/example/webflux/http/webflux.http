@@ -1,0 +1,5 @@
+GET localhost:8080/reactive/onenine/list
+
+###
+GET localhost:8080/reactive/onenine/flux
+Accept: text/event-stream #http stream 방식
