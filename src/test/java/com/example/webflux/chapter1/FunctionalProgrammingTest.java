@@ -1,8 +1,7 @@
-package com.example.webflux;
+package com.example.webflux.chapter1;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.web.bind.annotation.GetMapping;
 import reactor.core.publisher.Flux;
 
 import java.util.ArrayList;

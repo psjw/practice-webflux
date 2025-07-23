@@ -18,6 +18,10 @@ public class ReactiveProgrammingExampleController {
     //1~9까지 출력하는 api
     @GetMapping("/onenine/list")
     public List<Integer> produceOneToNine() {
+        //Mono나 Flux가 아니지만 Spring이 구독을 함
+        //Mono나 Flux가 아닌 동기적 객체를 반환시 자동으로 Mono.just(sink)로 반환
+        //아래의 코드는 subscribe()시에 호출이 되는게 아니라 함수 호출시 바로 호출되므로 blocking
+        //Mono나 Flux 사용
         List<Integer> sink = new ArrayList<>();
         for (int i = 1; i < 10; i++) {
             try {
